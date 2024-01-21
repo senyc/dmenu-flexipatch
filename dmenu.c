@@ -1110,7 +1110,13 @@ keypress(XKeyEvent *ev)
 		default:
 			return;
 		}
-	}
+	} else if (ev->state & Mod4Mask) {
+    switch (ksym) {
+      case XK_x: ksym = XK_Escape; break;
+      case XK_space: ksym = XK_Escape; break;
+      case XK_p: ksym = XK_Escape; break;
+    }
+  }
 
 	switch(ksym) {
 	default:
