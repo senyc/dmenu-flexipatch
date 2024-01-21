@@ -1114,6 +1114,7 @@ keypress(XKeyEvent *ev)
     switch (ksym) {
       case XK_x: ksym = XK_Escape; break;
       case XK_space: ksym = XK_Escape; break;
+      case XK_o: ksym = XK_Escape; break;
       case XK_p: ksym = XK_Escape; break;
     }
   }
