@@ -1116,6 +1116,8 @@ keypress(XKeyEvent *ev)
       case XK_space: ksym = XK_Escape; break;
       case XK_o: ksym = XK_Escape; break;
       case XK_p: ksym = XK_Escape; break;
+      case XK_r: ksym = XK_Escape; break;
+      case XK_semicolon: ksym = XK_Escape; break;
     }
   }
 
